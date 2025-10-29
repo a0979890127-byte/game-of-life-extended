@@ -92,9 +92,8 @@ def main():
     ani = animation.FuncAnimation(fig, update, fargs=(img, grid),
                                   frames=200, interval=100, blit=True)
     plt.show()
-    ani.save("game_of_life.gif", writer="pillow", fps=10)
-
 
 if __name__ == "__main__":
     main()
+
 
