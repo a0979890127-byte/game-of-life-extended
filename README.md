@@ -1,15 +1,62 @@
-# Extended Game of Life (Python version)
+# Game of Life
 
-This is an extended version of Conway's Game of Life implemented in Python.
+用 **Python + NumPy + Matplotlib** 實作
+展示三種生命型態：
 
-## Features
-- Three cell types:
-  - **Static**: never changes  
-  - **Oscillator**: flips every 2 steps  
-  - **Glider**: moves diagonally  
+1. **靜止型（Still life）**：例如 Block
+2. **振盪型（Oscillator）**：例如 Blinker
+3. **移動型（Spaceship）**：例如 Glider
 
-## How to run
+每次執行程式時，系統會在棋盤上**隨機放置多個不重疊的 pattern**，並依據規則自動演化
+
+---
+
+## 執行方式
+
+
 ```bash
 pip install numpy matplotlib
-python game_of_life_extended.py
-# game-of-life-extended
+```
+
+
+```bash
+python game_of_life.py
+```
+
+程式會自動生成隨機的初始狀態，以動畫顯示演化過程
+
+---
+
+## 主要功能
+
+* 使用 NumPy 的 `np.roll` 快速計算每個細胞的鄰居數
+* 支援多個 pattern 隨機放置，且避免重疊
+* 可修改棋盤大小、更新速度與 pattern 數量
+
+---
+
+## 程式架構
+
+| 檔案                | 功能說明                |
+| ----------------- | ------------------- |
+| `game_of_life.py` | 主程式，包含初始化、更新邏輯與動畫顯示 |
+| `README.md`       | 專案說明（本檔案）           |
+
+---
+
+## 生命規則
+
+1. 若一個活細胞周圍少於 2 個活細胞，則死亡（孤單）
+2. 若一個活細胞周圍有 2 或 3 個活細胞，則存活
+3. 若一個活細胞周圍超過 3 個活細胞，則死亡（擁擠）
+4. 若一個死細胞周圍恰好有 3 個活細胞，則誕生新細胞
+
+---
+
+## 動畫
+
+* Block：靜止不動
+* Blinker：原地閃爍
+* Glider：斜向移動
+
+每次執行都會產生不同的隨機組合，展示豐富的動態演化結果。
