@@ -1,4 +1,4 @@
-# Conway’s Game of Life
+## Conway’s Game of Life
 
 使用 Python（NumPy + Matplotlib）
 
