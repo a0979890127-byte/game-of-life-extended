@@ -1,4 +1,5 @@
 ## Conway’s Game of Life
+![執行結果](images/game_of_life.gif)
 
 使用 Python（NumPy + Matplotlib）
 
