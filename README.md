@@ -2,7 +2,7 @@
 
 使用 Python（NumPy + Matplotlib）
 
-## 包含的Patterns
+## Patterns
 | 名稱 | 結構 | 特性 |
 |------|------|------|
 | **Block** | 2×2 方塊 | 穩定型，不會變化 |
