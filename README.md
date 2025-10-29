@@ -1,16 +1,25 @@
-## Conway’s Game of Life
-![執行結果](images/game_of_life.gif)
+# Game of Life
 
-使用 Python（NumPy + Matplotlib）
+模擬細胞結構：
 
-## Patterns
-| 名稱 | 結構 | 特性 |
-|------|------|------|
-| **Block** | 2×2 方塊 | 穩定型，不會變化 |
-| **Blinker** | 三格直線 | 週期 2，會水平與垂直交替 |
-| **Glider** | 三角形Glider | 會沿對角線方向移動 |
-| **Toad** | 兩列交錯 6 格 | 週期 2，仿生物脈動 |
-| **Beacon** | 2×2 方塊組成對角Beacon | 週期 2，邊界閃爍 |
-| **LWSS ** | 5×4 結構 | 可水平滑行的Spaceship |
+-  **Block**：靜止不動的穩定型態（Still Life）  
+-  **Blinker**：原地振盪的週期型態（Oscillator）  
+-  **Glider**：能在空間中移動的移動型態（Spaceship）  
 
-隨機混入少量噪音型細胞，讓畫面增加變化。
+會隨機生成多組不同型態的生命體。
+
+---
+
+## 🎞️ 動畫預覽
+
+### 📺 1. 直接預覽 GIF
+![Game of Life 預覽](game_of_life.gif)
+
+### 🔗 2. 點擊圖片觀看影片
+[![觀看範例影片](images/thumbnail.png)](https://www.youtube.com/watch?v=wbPgoZ2d0Nw)
+
+---
+
+## ⚙️ 執行方式
+```bash
+python game_of_life.py
